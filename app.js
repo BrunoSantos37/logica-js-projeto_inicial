@@ -9,7 +9,7 @@ let response = prompt(
      `Olá ${name}! Dúvido acertar o número que eu estou pensando de 1 a 10! Tente!`
 );
 
-let tentativas = 1;
+let tentativas = 0;
 
 //If the response is wrong, it start in the loop
 for (let i = 1; response != roundNumber; i++) {
@@ -30,4 +30,6 @@ const h2 = document.querySelector("h2");
 h1.style.display = "block";
 h2.style.display = "block";
 
-h2.innerText += ` O número era ${roundNumber} e você acertou em ${tentativas} tentativas!`;
+h2.innerText += ` O número era ${roundNumber} e você acertou em ${
+     tentativas + 1
+} tentativas!`;
