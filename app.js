@@ -33,3 +33,11 @@ h2.style.display = "block";
 h2.innerText += ` O número era ${roundNumber} e você acertou em ${
      tentativas + 1
 } tentativas!`;
+
+const button = document.querySelector(".btn");
+
+button.style.display = "block";
+
+button.addEventListener("click", () => {
+     location.reload();
+});
